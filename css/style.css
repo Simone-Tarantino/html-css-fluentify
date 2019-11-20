@@ -9,21 +9,24 @@ body {
 }
 
 header {
-  height: 450px;
+  height: 500px;
   background-color: blue;
+  background-image: url(../img/oldman.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 103% 110%;
+
 }
 
 .header-content {
-  height: 450px;
+  height: 500px;
   width: 85%;
   margin: auto;
-  background-color: blue;
   border: 1px solid black;
 }
 
 .navbar-header {
   height: 80px;
-  background-color: lightblue;
   width: 100%;
   margin: auto;
   font-size: 13px;
