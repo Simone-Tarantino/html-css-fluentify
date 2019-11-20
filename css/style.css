@@ -137,3 +137,24 @@ header {
   text-decoration: none;
   font-size: 15px;
 }
+
+/* sezione sottotitolo main */
+
+.section-main {
+  position: relative;
+  height: 160px;
+  width: 100%;
+  background-color: #D3D3D3;
+}
+
+.sub-title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sub-title p {
+  color: #808080;
+  margin-top: 10px;
+}
