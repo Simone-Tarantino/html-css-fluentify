@@ -1,3 +1,5 @@
+/* regole generali */
+
 * {
   padding: 0;
   margin: 0;
@@ -10,18 +12,21 @@ body {
 
 header {
   height: 500px;
-  background-color: #0C325A;
   background-image: url(../img/oldman.png);
   background-size: 900px;
   background-repeat: no-repeat;
   background-position: 103% 110%;
-
+  background-color: #0C325A;
 }
 
 .header-content {
   height: 500px;
   width: 85%;
   margin: auto;
+}
+
+.float-left {
+  float: left;
 }
 
 /* navbar */
@@ -41,7 +46,6 @@ header {
 /* navbar sinistra */
 
 .navbar-header-left {
-  float: left;
   height: 80px;
   width: 70%;
 }
@@ -49,19 +53,19 @@ header {
   vertical-align: middle;
 }
 .navbar-header-left ul {
-  list-style: none;
   display: inline;
-  vertical-align: middle;
   line-height: 80px;
+  vertical-align: middle;
+  list-style: none;
 }
 .navbar-header-left li {
   display: inline;
   padding: 0 10px;
 }
 .navbar-header-left li a {
+  text-transform: uppercase;
   text-decoration: none;
   color: white;
-  text-transform: uppercase;
 }
 .navbar-header-left ul li:first-child a {
   padding-left: 40px;
@@ -70,15 +74,15 @@ header {
 /* navbar destra */
 
 .navbar-header-right {
-  float: right;
   height: 80px;
   width: 30%;
+  float: right;
 }
 .navbar-header-right ul {
-  list-style: none;
   display: inline;
   vertical-align: middle;
   line-height: 80px;
+  list-style: none;
 }
 .navbar-header-right ul li {
   display: inline;
@@ -86,8 +90,8 @@ header {
 }
 .navbar-header-right li a {
   text-decoration: none;
-  color: white;
   text-transform: uppercase;
+  color: white;
 }
 
 /* bottoni navbar */
@@ -101,19 +105,19 @@ header {
 }
 
 .navbar-button {
-  color: white;
-  background-color: #7CBB02;
   padding: 5px 20px;
   border-radius: 3px;
   text-transform: uppercase;
+  color: white;
+  background-color: #7CBB02;
 }
 
 /* contenuto header */
 
 .header-mid {
   position: relative;
-  width: 100%;
   height: 420px;
+  width: 100%;
 }
 
 .main-title {
@@ -121,26 +125,26 @@ header {
   top: 50%;
   transform: translateY(-50%);
   width: 40%;
-  color: white;
   font-size: 25px;
+  color: white;
 }
 .main-title h1 {
   margin-bottom: 25px;
 }
 
 .header-mid-button {
-  color: white;
-  background-color: #7CBB02;
   padding: 20px 15px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
   font-size: 15px;
+  color: white;
+  background-color: #7CBB02;
 }
 
 /* sezione sottotitolo main */
 
-.section-main {
+.sub-section {
   position: relative;
   height: 160px;
   width: 100%;
@@ -148,13 +152,50 @@ header {
 }
 
 .sub-title {
-  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .sub-title p {
   color: #808080;
   margin-top: 10px;
+}
+
+/* inizio main principale */
+
+.main-section {
+  height: 500px;
+  width: 85%;
+  margin: auto;
+}
+.main-section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-section hr {
+  width: 60px;
+  margin: 30px auto;
+  color: #808080;
+}
+.main-section p {
+  line-height: 25px;
+  color: #808080;
+}
+.main-section img {
+  height: 150px;
+}
+.main-section h2 {
+  margin-top: 15px;
+  color: #7CBB02;
+}
+
+.box-left,
+.box-mid,
+.box-right {
+  width: calc(100% / 3);
+  padding: 50px;
+  text-align: center;
 }
