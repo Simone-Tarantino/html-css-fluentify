@@ -10,9 +10,9 @@ body {
 
 header {
   height: 500px;
-  background-color: blue;
+  background-color: #0C325A;
   background-image: url(../img/oldman.png);
-  background-size: 50%;
+  background-size: 900px;
   background-repeat: no-repeat;
   background-position: 103% 110%;
 
@@ -22,8 +22,9 @@ header {
   height: 500px;
   width: 85%;
   margin: auto;
-  border: 1px solid black;
 }
+
+/* navbar */
 
 .navbar-header {
   height: 80px;
@@ -36,6 +37,8 @@ header {
   display: table;
   clear: both;
 }
+
+/* navbar sinistra */
 
 .navbar-header-left {
   float: left;
@@ -64,6 +67,8 @@ header {
   padding-left: 40px;
 }
 
+/* navbar destra */
+
 .navbar-header-right {
   float: right;
   height: 80px;
@@ -85,6 +90,8 @@ header {
   text-transform: uppercase;
 }
 
+/* bottoni navbar */
+
 .login-button {
   padding: 5px 15px;
   border: 2px solid white;
@@ -95,8 +102,38 @@ header {
 
 .navbar-button {
   color: white;
-  background-color: green;
+  background-color: #7CBB02;
   padding: 5px 20px;
   border-radius: 3px;
   text-transform: uppercase;
+}
+
+/* contenuto header */
+
+.header-mid {
+  position: relative;
+  width: 100%;
+  height: 420px;
+}
+
+.main-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  color: white;
+  font-size: 25px;
+}
+.main-title h1 {
+  margin-bottom: 25px;
+}
+
+.header-mid-button {
+  color: white;
+  background-color: #7CBB02;
+  padding: 20px 15px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
 }
