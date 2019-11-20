@@ -11,7 +11,7 @@ header {
 
 .header-content {
   height: 450px;
-  width: 80%;
+  width: 85%;
   margin: auto;
   background-color: blue;
   border: 1px solid black;
@@ -22,4 +22,31 @@ header {
   background-color: lightblue;
   width: 100%;
   margin: auto;
+}
+.navbar-header::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbar-header-left {
+  float: left;
+  height: 80px;
+}
+.navbar-header-left img {
+  vertical-align: middle;
+}
+.navbar-header-left ul {
+  list-style: none;
+  display: inline;
+  vertical-align: middle;
+  line-height: 80px;
+}
+.navbar-header-left li {
+  display: inline;
+  padding: 0 10px;
+}
+
+.navbar-header-right {
+  float: right;
 }
